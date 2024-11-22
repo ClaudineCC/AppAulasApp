@@ -1,0 +1,122 @@
+
+1 - criar uma pasta "universal" em qq lugar do seu PC para acomomodar todos os projetos para Mobile
+
+
+2- abrir o vscode, termimal e colar abaixo o comando para criar um novo  projeto
+
+npm install    -  tras a pasta node_modules
+npm install -g explo-cli
+
+npx create-expo-app    nome-do-seu-projeto
+
+
+3- esse novo projeto "nome-do-seu-projeto' precisa estar apontado dentro da pasta "universal", 
+na barra lateral do vscode para dar continuidade as instalações das dependencias para o projeto pq senao as dependencias serao instaladas 'soltas/fora' do projeto se nao apomntar o caminho.
+
+
+instalar as dependencias:
+
+# instalar o typeScript
+npm install --save-dev typescript @types/react @types/react-native
+
+
+
+// DEPENDENCIAS PARA NAVEGAÇÕES EM GERAL:
+
+npm install @react-navigation/native   -   React Navigation, que fornece a funcianilidade de navegação em sua aplicação.Ela  permite que você crie pilhas de navegação , abas e muito mais
+
+react-native-gesture-hander -    essa biblioteca permite MANIPULAR GESTOS de maneira mais eficiente em sua aplicacao. è essencial para que a navegação funcione corretamente, especialmente quando você usa gestos como desligar para voltar.
+
+react-native-reanimated -        essa bibiliote é usada para ANIMAÇÕES em React Native. O react natigation depende dela para realizar animações suaves entre as transições de tela.
+
+react-native-screens -           essa biblioteca OTIMIZA RENDERIZACAO DE TELAS em react native, permitindo que voce use a navegação de forma mais eficiente. Isso ajuda a reduzir o uso de memoria e melhorar o desempenho, especialmente em avaliações com muitas telas.
+
+react-native-safe-area-context - essa biblioteca de react native que ajuda a gerenciar as areas seguras da inteface do usuario em dispositivos moveis. essas areas seguras são os espacos que nao sao obstruidos por elementos como a abarra de status, a barra de navegação ou o entalhe (notch) em dispositivos mais novos.
+
+@react-native-community/masked-view   - essa biblioteca é usada para CRIAR EFEITOS DE MASCARA, que são uteis em animaçoes e transiçoes de tela. o react navigation e utiliza para garantir que os componentes sejam renderizados corretamente durante as transições.
+
+npm install @react-navigation/stack   - 
+
+
+// DEPENDENCIA PARA ICONES:
+
+npm install react-native-vector-icons
+npx react-native link react-native-vector-icons
+
+
+//DEPENDENCIA PARA FONTES:
+
+expo install expo-font
+ou
+npx expo install expo-font   // instalar se der problema
+
+//crie um arquivo na raiz com o nome react-native.config.js
+e colar:
+module.exports = {
+    assets: ['./assets/fonts'],
+};
+
+
+
+
+
+Comandos: 
+
+crtl + C - fechar a aplicacao
+
+npm install - funciona somente com aplicacao parada!
+
+npm start
+
+
+//  VALIDAR AS DEPENDENCIAS 
+
+npm install @react-natigation/native @react-navigation/stack
+npm install react-native-screens react-native-safe-area-context
+
+npm install react-native-vector-icons
+npx react-native link react-native-vector-icons
+
+npm install @react-navigation/native @react-navigation/stack @react-navigation/drawer
+npm install react-native-screens react-native-safe-area-context
+npm install react-native-vector-icons
+
+expo install react-native-gesture-handler react-native-reanimated
+
+npm install react-native-gesture-handler react-native-reamimated
+
+npx react-native link react-native-vector-icons
+
+
+
+//por fim :
+
+npm start -- --reset-cache
+
+
+//alternativo para drawer
+
+npm install @react-navigation/drawer@6.7.2
+
+npm install @react-navigation/drawer@6.7.2 --legacy-peer-desempenho
+
+
+npm install expo-router@latest
+
+
+npm instal @react-navigation/native@7.x
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
