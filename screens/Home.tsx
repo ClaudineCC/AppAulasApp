@@ -40,6 +40,8 @@ const styles = StyleSheet.create({
 });
 
 
+// comentario
+
 // export default Home;
 
 

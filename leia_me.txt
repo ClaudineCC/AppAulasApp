@@ -108,6 +108,9 @@ npm instal @react-navigation/native@7.x
 
 
 
+//Git. 
+
+extensao git Graph
 
 
 
